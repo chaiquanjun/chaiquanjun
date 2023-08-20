@@ -1,4 +1,4 @@
--- 柴犬君汉化巴掌脚本
+-- if you have problems message Guy that exists#1915
 
 if not game:IsLoaded() then
     game.Loaded:Wait()
@@ -66,15 +66,15 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/ion
                 })
 
                 local Tab5 = Window:MakeTab({
-                    Name = "自定义",
+                    Name = "调试",
                     Icon = "http://www.roblox.com/asset/?id=4335489011",
                     PremiumOnly = false
                 })
 
-Tab:AddLabel("这是免费的，如有倒卖请向官方报告")
+Tab:AddLabel("脚本汉化作者QQ:2758388717")
 
 Tab:AddButton({
-	Name = "FE脚本(不建议用)",
+	Name = "FE",
 	Callback = function()
       		loadstring(game:HttpGet('https://raw.githubusercontent.com/ionlyusegithubformcmods/1-Line-Scripts/main/Infinite%20Yield%20but%20with%20secure%20dex'))()
   	end    
@@ -88,7 +88,7 @@ Tab:AddButton({
 })
 
 Tab3:AddToggle({
-	Name = "Anti Acid",
+	Name = "防Acid",
 	Default = false,
 	Callback = function(Value)
 AntiAcid.CanCollide = Value
@@ -96,7 +96,7 @@ AntiAcid.CanCollide = Value
 })
 
 Tab3:AddToggle({
-	Name = "Anti Lava",
+	Name = "防Lava",
 	Default = false,
 	Callback = function(Value)
 AntiLava.CanCollide = Value
@@ -536,7 +536,7 @@ end
                 })
 
 Tab4:AddButton({
-	Name = "自由表情(比例：/e 表情名字)",
+	Name = "自由表情(聊天框输入格式:/e 表情名称)",
 	Callback = function()
 Floss = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(game.ReplicatedStorage.AnimationPack.Floss, game.Players.LocalPlayer.Character.Humanoid)
 Groove = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(game.ReplicatedStorage.AnimationPack.Groove, game.Players.LocalPlayer.Character.Humanoid)
@@ -602,7 +602,7 @@ Tab5:AddSlider({
 	Default = 20,
 	Color = Color3.fromRGB(0,162,255),
 	Increment = 1,
-	ValueName = "WS",
+	ValueName = "速度",
 	Callback = function(Value)
 		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
 Walkspeed = Value
@@ -624,13 +624,13 @@ task.wait()
 })
 
 Tab5:AddSlider({
-	Name = "跳跃高度",
+	Name = "跳跃",
 	Min = 50,
 	Max = 1000,
 	Default = 50,
 	Color = Color3.fromRGB(255,154,0),
 	Increment = 1,
-	ValueName = "JP",
+	ValueName = "高度",
 	Callback = function(Value)
 		game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
 Jumppower = Value
@@ -638,7 +638,7 @@ Jumppower = Value
 })
 
 Tab5:AddToggle({
-	Name = "保存跳跃高度",
+	Name = "保存跳跃",
 	Default = false,
 	Callback = function(Value)
 KeepJumppower = Value
@@ -680,7 +680,7 @@ TournamentAntiVoid.Transparency = 1
                 
                 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/ionlyusegithubformcmods/1-Line-Scripts/main/Mobile%20Friendly%20Orion')))()
                 
-                local Window = OrionLib:MakeWindow({Name = "Slap Battles KS Only hub that exists", HidePremium = true, IntroEnabled = false, SaveConfig = false, ConfigFolder = "OrionTest"})
+                local Window = OrionLib:MakeWindow({Name = "柴犬君巴掌脚本", HidePremium = true, IntroEnabled = false, SaveConfig = false, ConfigFolder = "OrionTest"})
 
                 local Tab = Window:MakeTab({
                     Name = "首页",
@@ -713,22 +713,22 @@ TournamentAntiVoid.Transparency = 1
                 })
 
                 local Tab6 = Window:MakeTab({
-                    Name = "自定义",
+                    Name = "调试",
                     Icon = "http://www.roblox.com/asset/?id=4335489011",
                     PremiumOnly = false
                 })
 
-Tab:AddLabel("这是免费的，如有倒卖请向官方报告")
+Tab:AddLabel("脚本汉化作者QQ:2758388717")
 
 Tab:AddButton({
-	Name = "FE脚本(不建议用)",
+	Name = "FE",
 	Callback = function()
       		loadstring(game:HttpGet('https://raw.githubusercontent.com/ionlyusegithubformcmods/1-Line-Scripts/main/Infinite%20Yield%20but%20with%20secure%20dex'))()
   	end    
 })
 
 Tab:AddButton({
-	Name = "重新加入此服务器",
+	Name = "重新加入服务器",
 	Callback = function()
       		game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, game.JobId, game.Players.LocalPlayer)
   	end    
@@ -742,7 +742,7 @@ Tab:AddButton({
 })
 
 Tab4:AddButton({
-	Name = "查看测试服务器(适应于手套泄露)",
+	Name = "进入官方手套测试服务器(可以提前看更新了哪些东西)",
 	Callback = function()
 local teleportFunc = queueonteleport or queue_on_teleport or syn and syn.queue_on_teleport
 if teleportFunc then
@@ -780,14 +780,14 @@ game:GetService("TeleportService"):Teleport(9412268818)
                 })
 
 Tab4:AddButton({
-	Name = "Slap Farm(复制脚本，放在autoexec中)",
+	Name = "巴掌农场(复制脚本，放在autoexec里)",
 	Callback = function()
 setclipboard("loadstring(game:HttpGet('https://raw.githubusercontent.com/ionlyusegithubformcmods/1-Line-Scripts/main/Slap%20Farm'))()")
                     end    
                 })
 
 Tab4:AddButton({
-	Name = "启动Slap Farm(从autoexex中取出脚本以停止)",
+	Name = "启动农场",
 	Callback = function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/ionlyusegithubformcmods/1-Line-Scripts/main/Slap%20Farm'))()
                     end    
@@ -815,7 +815,7 @@ end
                 })
 
 Tab2:AddButton({
-	Name = "上帝模式 (Breaks killstreak)",
+	Name = "Godmode (Resets character) (Breaks killstreak)",
 	Callback = function()
 if game.Players.LocalPlayer.Character:FindFirstChild("entered") == nil then
 firetouchinterest(game.Players.LocalPlayer.Character:WaitForChild("Head"), workspace.Lobby.Teleport1.TouchInterest.Parent, 0)
@@ -878,7 +878,7 @@ end
                 })
 
                 Tab2:AddToggle({
-                    Name = "召唤null 手套的小怪",
+                    Name = "Null手套技能无限放(面前直接出现)",
                     Default = false,
                     Callback = function(Value)
 NullSpam = Value
@@ -890,7 +890,7 @@ end
                 })
 
 Tab2:AddToggle({
-                    Name = "自动放光波球(六秒一次)",
+                    Name = "自动发生光波球(六秒一次)",
                     Default = false,
                     Callback = function(Value)
 if Person == nil then
@@ -905,11 +905,11 @@ end
                 })
 
 Tab2:AddTextbox({
-	Name = "让别人放光波球",
-	Default = "Username",
+	Name = "使别人发射光波球",
+	Default = "名字",
 	TextDisappear = false,
 	Callback = function(Value)
-if Value == "Me" or Value == "me" or Value == "Username" or Value == "" then
+if Value == "Me" or Value == "me" or Value == "名字" or Value == "" then
 Person = game.Players.LocalPlayer.Name
 else
 Person = Value
@@ -918,7 +918,7 @@ end
 })
 
                 Tab4:AddToggle({
-                    Name = "Error 手套声音折磨,
+                    Name = "错误手套声音折磨",
                     Default = false,
                     Callback = function(Value)
 ErrorSoundSpam = Value
@@ -957,7 +957,7 @@ end
                 })
 
 Tab4:AddToggle({
-                    Name = "删除姓名标签(打破连续杀人记录)",
+                    Name = "移除姓名标签(打破连续击败)",
                     Default = false,
                     Callback = function(Value)
 AutoRemoveNameTag = Value
@@ -975,7 +975,7 @@ end
                 })
 
 Tab4:AddButton({
-	Name = "自由表情(比例：/e 表情名字)",
+	Name = "自由表情(聊天框输入格式:/e 表情名称)",
 	Callback = function()
 Floss = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(game.ReplicatedStorage.AnimationPack.Floss, game.Players.LocalPlayer.Character.Humanoid)
 Groove = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(game.ReplicatedStorage.AnimationPack.Groove, game.Players.LocalPlayer.Character.Humanoid)
@@ -1035,21 +1035,21 @@ end)
                 })
 
 Tab4:AddButton({
-	Name = "传送至大厅",
+	Name = "传送到绝对安全地",
 	Callback = function()
       		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.Spot.CFrame * CFrame.new(0,50,0)
   	end    
 })
 
 Tab4:AddButton({
-	Name = "传送至竞技场",
+	Name = "传送到竞技场",
 	Callback = function()
       		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.workspace.Arena.Rock.CFrame
   	end    
 })
 
 Tab4:AddDropdown({
-	Name = "光波球发射方式",
+	Name = "光波球内型",
 	Default = "1",
 	Options = {"有伤害", "无伤害"},
 	Callback = function(Value)
@@ -1070,7 +1070,7 @@ Tab6:AddSlider({
 	Default = 20,
 	Color = Color3.fromRGB(0,162,255),
 	Increment = 1,
-	ValueName = "WS",
+	ValueName = "速度",
 	Callback = function(Value)
 		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
 Walkspeed = Value
@@ -1092,13 +1092,13 @@ task.wait()
 })
 
 Tab6:AddSlider({
-	Name = "跳跃高度",
+	Name = "跳跃",
 	Min = 50,
 	Max = 1000,
 	Default = 50,
 	Color = Color3.fromRGB(255,154,0),
 	Increment = 1,
-	ValueName = "JP",
+	ValueName = "高度",
 	Callback = function(Value)
 		game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
 Jumppower = Value
@@ -1106,7 +1106,7 @@ Jumppower = Value
 })
 
 Tab6:AddToggle({
-	Name = "保存跳跃高度",
+	Name = "保存跳跃",
 	Default = false,
 	Callback = function(Value)
 KeepJumppower = Value
@@ -1120,7 +1120,7 @@ task.wait()
 })
 
 Tab5:AddButton({
-	Name = "进入迷宫",
+	Name = "Get Elude",
 	Callback = function()
 local teleportFunc = queueonteleport or queue_on_teleport or syn and syn.queue_on_teleport
 if teleportFunc then
@@ -1139,10 +1139,10 @@ game:GetService("TeleportService"):Teleport(11828384869)
   	end    
 })
 
-Tab5:AddLabel("进入迷宫且开始显示计数器后")
+Tab5:AddLabel("When in the elude maze there is a counter feature")
 
 Tab5:AddButton({
-	Name = "获取链(需要1千巴掌)",
+	Name = "Get Chain (Needs 1k slaps)",
 	Callback = function()
 if game.Players.LocalPlayer.leaderstats.Slaps.Value >= 1000 then
 local teleportFunc = queueonteleport or queue_on_teleport or syn and syn.queue_on_teleport
@@ -1327,7 +1327,7 @@ end
 })
 
 Tab5:AddButton({
-	Name = "获取大亨",
+	Name = "Get Tycoon",
 	Callback = function()
       		repeat task.wait()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.Arena.Plate.CFrame * CFrame.new(0,-2,0) * CFrame.Angles(math.rad(90), math.rad(0), math.rad(0))
@@ -1336,7 +1336,7 @@ until game.Players.LocalPlayer.PlayerGui.PlateIndicator.TextLabel.Text == "Plate
                 })
 
 Tab5:AddButton({
-                    Name = "获取编辑(需要5千手套)",
+                    Name = "Get [REDACTED] (Needs 5k slaps)",
 Callback = function()
 if game.Players.LocalPlayer.leaderstats.Slaps.Value >= 5000 then
 Door = 0
@@ -1356,28 +1356,28 @@ end
                     })
 
 Tab5:AddButton({
-	Name = "获得巴西徽章",
+	Name = "Get Brazil badge",
 	Callback = function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.workspace.Lobby.brazil.portal.CFrame
                     end    
                 })
 
 Tab5:AddButton({
-	Name = "获得法庭证据徽章",
+	Name = "Get court evidence badge",
 	Callback = function()
 fireclickdetector(game.Workspace.Lobby.Scene.knofe.ClickDetector)
                     end    
                 })
 
 Tab5:AddButton({
-	Name = "获得鸭子徽章",
+	Name = "Get duck badge",
 	Callback = function()
 fireclickdetector(game.Workspace.Arena["default island"]["Rubber Ducky"].ClickDetector)
                     end    
                 })
 
 Tab5:AddButton({
-	Name = "获得孤独的橘子徽章",
+	Name = "Get The Lone Orange badge",
 	Callback = function()
 fireclickdetector(game.Workspace.Arena.island5.Orange.ClickDetector)
                     end    
@@ -1415,7 +1415,7 @@ end
 })
 
 Tab3:AddToggle({
-                    Name = "Anti Ragdoll (This will reset your character)",
+                    Name = "防Ragdoll (This will reset your character)",
                     Default = false,
                     Callback = function(Value)
 AntiRagdoll = Value
@@ -1436,7 +1436,7 @@ end
                 })
 
                Tab3:AddToggle({
-                    Name = "防 void手套",
+                    Name = "防掉落",
                     Default = false,
                     Callback = function(Value)
 game.Workspace.dedBarrier.CanCollide = Value
@@ -1445,7 +1445,7 @@ game.Workspace.TAntiVoid.CanCollide = Value
                 })
 
                Tab3:AddToggle({
-                    Name = "防死神手套",
+                    Name = "防掉落伤害(接下来全是防各种手套)",
                     Default = false,
                     Callback = function(Value)
 if Value == true then
@@ -1475,7 +1475,7 @@ end
                 })
 
                Tab3:AddToggle({
-                    Name = "防巴西手套",
+                    Name = "防Brazil",
                     Default = false,
                     Callback = function(Value)
 if Value == true then
@@ -1495,7 +1495,7 @@ end
                 })
 
                Tab3:AddToggle({
-                    Name = "防死亡魔方",
+                    Name = "防Cube of Death",
                     Default = false,
                     Callback = function(Value)
 if Value == true then
@@ -1532,15 +1532,15 @@ elseif game.PlaceId == 11828384869 then
                 })
 
                 local Tab4 = Window:MakeTab({
-                    Name = "自定义",
+                    Name = "调试",
                     Icon = "http://www.roblox.com/asset/?id=4335489011",
                     PremiumOnly = false
                 })
 
-Tab:AddLabel("这是免费的，如有倒卖请向官方报告")
+Tab:AddLabel("脚本汉化作者QQ:2758388717")
 
 Tab:AddButton({
-	Name = "FE脚本(不建议用)",
+	Name = "FE",
 	Callback = function()
       		loadstring(game:HttpGet('https://raw.githubusercontent.com/ionlyusegithubformcmods/1-Line-Scripts/main/Infinite%20Yield%20but%20with%20secure%20dex'))()
   	end    
@@ -1554,7 +1554,7 @@ Tab:AddButton({
 })
 
 Tab2:AddButton({
-	Name = "查看测试服务器(适应于手套泄露)",
+	Name = "进入官方手套测试服务器(可以提前看更新了哪些东西)",
 	Callback = function()
 local teleportFunc = queueonteleport or queue_on_teleport or syn and syn.queue_on_teleport
 if teleportFunc then
@@ -1592,14 +1592,14 @@ game:GetService("TeleportService"):Teleport(9412268818)
                 })
 
 Tab2:AddButton({
-	Name = "Slap Farm(复制脚本，放在autoexec中)",
+	Name = "巴掌农场(复制脚本，放在autoexec里)",
 	Callback = function()
 setclipboard("loadstring(game:HttpGet('https://raw.githubusercontent.com/ionlyusegithubformcmods/1-Line-Scripts/main/Slap%20Farm'))()")
                     end    
                 })
 
 Tab2:AddButton({
-	Name = "启动Slap Farm(从autoexex中取出脚本以停止)",
+	Name = "启动农场",
 	Callback = function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/ionlyusegithubformcmods/1-Line-Scripts/main/Slap%20Farm'))()
                     end    
@@ -1612,7 +1612,7 @@ Tab4:AddSlider({
 	Default = 20,
 	Color = Color3.fromRGB(0,162,255),
 	Increment = 1,
-	ValueName = "WS",
+	ValueName = "速度",
 	Callback = function(Value)
 		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
 Walkspeed = Value
@@ -1634,13 +1634,13 @@ task.wait()
 })
 
 Tab4:AddSlider({
-	Name = "跳跃高度",
+	Name = "跳跃",
 	Min = 50,
 	Max = 1000,
 	Default = 50,
 	Color = Color3.fromRGB(255,154,0),
 	Increment = 1,
-	ValueName = "JP",
+	ValueName = "高度",
 	Callback = function(Value)
 		game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
 Jumppower = Value
@@ -1648,7 +1648,7 @@ Jumppower = Value
 })
 
 Tab4:AddToggle({
-	Name = "保存跳跃高度",
+	Name = "保存跳跃",
 	Default = false,
 	Callback = function(Value)
 KeepJumppower = Value
@@ -1662,7 +1662,7 @@ task.wait()
 })
 
 Tab3:AddButton({
-	Name = "进入迷宫",
+	Name = "Get Elude",
 	Callback = function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-502.336, 14.228, -179.597)
 game:GetService("TeleportService"):Teleport(6403373529)
@@ -1686,7 +1686,7 @@ end
 })
 
 Tab3:AddButton({
-	Name = "获取链(需要1千巴掌)",
+	Name = "Get Chain (Needs 1k slaps)",
 	Callback = function()
 if game.Players.LocalPlayer.leaderstats.Slaps.Value >= 1000 then
 local teleportFunc = queueonteleport or queue_on_teleport or syn and syn.queue_on_teleport
@@ -1898,14 +1898,14 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/zephyr10101/CameraSpy
                 })
 
 Tab:AddButton({
-	Name = "FE脚本(不建议用)",
+	Name = "FE",
 	Callback = function()
       		loadstring(game:HttpGet('https://raw.githubusercontent.com/ionlyusegithubformcmods/1-Line-Scripts/main/Infinite%20Yield%20but%20with%20secure%20dex'))()
   	end    
 })
 
 Tab:AddButton({
-	Name = "重新加入此服务器",
+	Name = "重新加入服务器",
 	Callback = function()
       		local teleportFunc = queueonteleport or queue_on_teleport or syn and syn.queue_on_teleport
 if teleportFunc then
@@ -1990,22 +1990,22 @@ TournamentAntiVoid.Transparency = 1
                 })
 
                 local Tab6 = Window:MakeTab({
-                    Name = "自定义",
+                    Name = "调试",
                     Icon = "http://www.roblox.com/asset/?id=4335489011",
                     PremiumOnly = false
                 })
 
-Tab:AddLabel("这是免费的，如有倒卖请向官方报告")
+Tab:AddLabel("脚本汉化作者QQ:2758388717")
 
 Tab:AddButton({
-	Name = "FE脚本(不建议用)",
+	Name = "FE",
 	Callback = function()
       		loadstring(game:HttpGet('https://raw.githubusercontent.com/ionlyusegithubformcmods/1-Line-Scripts/main/Infinite%20Yield%20but%20with%20secure%20dex'))()
   	end    
 })
 
 Tab:AddButton({
-	Name = "重新加入此服务器",
+	Name = "重新加入服务器",
 	Callback = function()
       		game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, game.JobId, game.Players.LocalPlayer)
   	end    
@@ -2019,7 +2019,7 @@ Tab:AddButton({
 })
 
 Tab4:AddButton({
-	Name = "查看测试服务器(适应于手套泄露)",
+	Name = "进入官方手套测试服务器(可以提前看更新了哪些东西)",
 	Callback = function()
 local teleportFunc = queueonteleport or queue_on_teleport or syn and syn.queue_on_teleport
 if teleportFunc then
@@ -2057,14 +2057,14 @@ game:GetService("TeleportService"):Teleport(9412268818)
                 })
 
 Tab4:AddButton({
-	Name = "Slap Farm(复制脚本，放在autoexec中)",
+	Name = "巴掌农场(复制脚本，放在autoexec里)",
 	Callback = function()
 setclipboard("loadstring(game:HttpGet('https://raw.githubusercontent.com/ionlyusegithubformcmods/1-Line-Scripts/main/Slap%20Farm'))()")
                     end    
                 })
 
 Tab4:AddButton({
-	Name = "启动Slap Farm(从autoexex中取出脚本以停止)",
+	Name = "启动农场",
 	Callback = function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/ionlyusegithubformcmods/1-Line-Scripts/main/Slap%20Farm'))()
                     end    
@@ -2094,7 +2094,7 @@ end
                 })
 
 Tab2:AddButton({
-	Name = "上帝模式 (Breaks ks & reaper)",
+	Name = "无敌模式",
 	Callback = function()
 if game.Players.LocalPlayer.Character.isInArena.Value == false then
 firetouchinterest(game.Players.LocalPlayer.Character:WaitForChild("Head"), workspace.Lobby.Teleport1.TouchInterest.Parent, 0)
@@ -2156,7 +2156,7 @@ end
                 })
 
                 Tab2:AddToggle({
-                    Name = "召唤null 手套的小怪",
+                    Name = "Null手套技能无限放(面前直接出现)",
                     Default = false,
                     Callback = function(Value)
 NullSpam = Value
@@ -2168,7 +2168,7 @@ end
                 })
 
 Tab2:AddToggle({
-                    Name = "自动放光波球(六秒一次)",
+                    Name = "自动发生光波球(六秒一次)",
                     Default = false,
                     Callback = function(Value)
 if Person == nil then
@@ -2183,11 +2183,11 @@ end
                 })
 
 Tab2:AddTextbox({
-	Name = "让别人放光波球",
-	Default = "Username",
+	Name = "使别人发射光波球",
+	Default = "名字",
 	TextDisappear = false,
 	Callback = function(Value)
-if Value == "Me" or Value == "me" or Value == "Username" or Value == "" then
+if Value == "Me" or Value == "me" or Value == "名字" or Value == "" then
 Person = game.Players.LocalPlayer.Name
 else
 Person = Value
@@ -2196,7 +2196,7 @@ end
 })
 
                 Tab4:AddToggle({
-                    Name = "Error 手套声音折磨,
+                    Name = "错误手套声音折磨",
                     Default = false,
                     Callback = function(Value)
 ErrorSoundSpam = Value
@@ -2208,7 +2208,7 @@ end
                 })
 
                 Tab2:AddToggle({
-                    Name = "能力手套技能(可在大厅开)",
+                    Name = "能力手套(大厅可用)",
                     Default = false,
                     Callback = function(Value)
 On = Value
@@ -2437,7 +2437,7 @@ end
 })
 
 Tab2:AddButton({
-	Name = "踢球员(需要Za 手套)",
+	Name = "踢球员(需要Za手套)",
 	Callback = function()
 if game.Players.LocalPlayer.leaderstats.Glove.Value == "Za Hando" then
 OGWS = game.Players.LocalPlayer.Character.Humanoid.WalkSpeed
@@ -2468,7 +2468,7 @@ end
                 })
 
 Tab4:AddButton({
-	Name = "给收割者20个人头(别人给你一巴掌再用)",
+	Name = "给连续击败20杀(前提是你被扇了一巴掌)",
 	Callback = function()
 for i = 1, 20 do
         game:GetService("ReplicatedStorage"):WaitForChild("HumanoidDied"):FireServer(x,false)
@@ -2483,7 +2483,7 @@ for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
                 })
 
                 Tab4:AddToggle({
-                    Name = "大亨手套自动点击",
+                    Name = "大亨手套自动点击大亨",
                     Default = false,
                     Callback = function(Value)
 AutoTycoon = Value
@@ -2504,7 +2504,7 @@ end
                 })
 
                 Tab4:AddToggle({
-                    Name = "Rhythm+自动按下(前提装备Rhythm手套)",
+                    Name = "音乐光环+自带点击(先准备音乐手套)",
                     Default = false,
                     Callback = function(Value)
 RhythmNoteSpam = Value
@@ -2533,7 +2533,7 @@ end
                 })
 
 Tab4:AddToggle({
-                    Name = "删除姓名标签(打破连续杀人记录)",
+                    Name = "移除姓名标签(打破连续击败)",
                     Default = false,
                     Callback = function(Value)
 AutoRemoveNameTag = Value
@@ -2551,7 +2551,7 @@ end
                 })
 
 Tab4:AddTextbox({
-	Name = "Equip Glove (Only use in lobby)",
+	Name = "装备手套(大厅使用)",
 	Default = "手套名称",
 	TextDisappear = true,
 	Callback = function(Value)
@@ -2562,21 +2562,21 @@ end
 })
 
 Tab4:AddButton({
-	Name = "传送至大厅",
+	Name = "传送到决对安全地",
 	Callback = function()
       		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.Spot.CFrame * CFrame.new(0,50,0)
   	end    
 })
 
 Tab4:AddButton({
-	Name = "传送至竞技场",
+	Name = "穿上到竞技场",
 	Callback = function()
       		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.workspace.Arena.Rock.CFrame
   	end    
 })
 
 Tab4:AddButton({
-	Name = "自由表情(比例：/e 表情名字)",
+	Name = "自由表情(聊天框输入格式:/e 表情名称)",
 	Callback = function()
 Floss = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(game.ReplicatedStorage.AnimationPack.Floss, game.Players.LocalPlayer.Character.Humanoid)
 Groove = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(game.ReplicatedStorage.AnimationPack.Groove, game.Players.LocalPlayer.Character.Humanoid)
@@ -2636,7 +2636,7 @@ end)
                 })
 
 Tab4:AddDropdown({
-	Name = "光波球发射方式",
+	Name = "光波球内型",
 	Default = "1",
 	Options = {"有伤害", "无伤害"},
 	Callback = function(Value)
@@ -2651,7 +2651,7 @@ end
 })
 
 Tab4:AddButton({
-	Name = "把手套变成块状(不适用全部)",
+	Name = "把手套变成块状(只支持一些手套)",
 	Callback = function()
 for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
 if v:IsA("Tool") then
@@ -2665,7 +2665,7 @@ end
                 })
 
 Tab4:AddButton({
-	Name = "黄金手套无限时间(竞技场使用)",
+	Name = "黄金手套无限时间(竞技场适应)",
 	Callback = function()
 game:GetService("ReplicatedStorage").Goldify:FireServer(true)
                     end    
@@ -2684,7 +2684,7 @@ end
                 })
 
 Tab4:AddToggle({
-                    Name = "彩虹人物(需要黄金手套)",
+                    Name = "彩色人物(先装备黄金手套)",
                     Default = false,
                     Callback = function(Value)
 Rainbow = Value
@@ -2698,7 +2698,7 @@ end
                 })
 
 Tab4:AddButton({
-	Name = "消灭大亨",
+	Name = "炸掉大亨",
 	Callback = function()
 for i = 1, 110 do
  for i,v in pairs(workspace:GetDescendants()) do
@@ -2712,7 +2712,7 @@ end
                 })
 
 Tab4:AddToggle({
-                    Name = "乒乓球速度修改",
+                    Name = "乒乓球速度",
                     Default = false,
                     Callback = function(Value)
 PingPongOrbit = Value
@@ -2748,7 +2748,7 @@ end
                 })
 
 Tab4:AddSlider({
-	Name = "乒乓球速度",
+	Name = "乒乓球速度显示",
 	Min = 0,
 	Max = 50,
 	Default = 10,
@@ -2761,7 +2761,7 @@ Tab4:AddSlider({
 })
 
                 Tab4:AddToggle({
-                    Name = "邮件声音折磨",
+                    Name = "空间声音折磨",
                     Default = false,
                     Callback = function(Value)
 SpaceSoundSpam = Value
@@ -2785,7 +2785,7 @@ end
                 })
 
                 Tab4:AddToggle({
-                    Name = "邮件金音折磨",
+                    Name = "黄金声音折磨",
                     Default = false,
                     Callback = function(Value)
 GoldenSoundSpam = Value
@@ -2828,7 +2828,7 @@ Tab6:AddSlider({
 	Default = 20,
 	Color = Color3.fromRGB(0,162,255),
 	Increment = 1,
-	ValueName = "WS",
+	ValueName = "速度",
 	Callback = function(Value)
 		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
 Walkspeed = Value
@@ -2850,13 +2850,13 @@ task.wait()
 })
 
 Tab6:AddSlider({
-	Name = "跳跃高度",
+	Name = "跳跃",
 	Min = 50,
 	Max = 1000,
 	Default = 50,
 	Color = Color3.fromRGB(255,154,0),
 	Increment = 1,
-	ValueName = "JP",
+	ValueName = "高度",
 	Callback = function(Value)
 		game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
 Jumppower = Value
@@ -2864,7 +2864,7 @@ Jumppower = Value
 })
 
 Tab6:AddToggle({
-	Name = "保存跳跃高度",
+	Name = "保存跳跃",
 	Default = false,
 	Callback = function(Value)
 KeepJumppower = Value
@@ -2878,7 +2878,7 @@ task.wait()
 })
 
 Tab5:AddButton({
-	Name = "进入迷宫",
+	Name = "Get Elude",
 	Callback = function()
 local teleportFunc = queueonteleport or queue_on_teleport or syn and syn.queue_on_teleport
 if teleportFunc then
@@ -2897,10 +2897,10 @@ game:GetService("TeleportService"):Teleport(11828384869)
   	end    
 })
 
-Tab5:AddLabel("进入迷宫且开始显示计数器后")
+Tab5:AddLabel("When in the elude maze there is a counter feature")
 
 Tab5:AddButton({
-	Name = "获取链(需要1千巴掌)",
+	Name = "Get Chain (Needs 1k slaps)",
 	Callback = function()
 if game.Players.LocalPlayer.leaderstats.Slaps.Value >= 1000 then
 local teleportFunc = queueonteleport or queue_on_teleport or syn and syn.queue_on_teleport
@@ -3085,7 +3085,7 @@ end
 })
 
 Tab5:AddButton({
-	Name = "获取大亨",
+	Name = "Get Tycoon",
 	Callback = function()
       		repeat task.wait()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.Arena.Plate.CFrame * CFrame.new(0,-1.5,0) * CFrame.Angles(math.rad(90), math.rad(0), math.rad(0))
@@ -3094,7 +3094,7 @@ until game.Players.LocalPlayer.PlayerGui.PlateIndicator.TextLabel.Text == "Plate
                 })
 
 Tab5:AddButton({
-                    Name = "获取编辑(需要5千手套)",
+                    Name = "Get [REDACTED] (Needs 5k slaps)",
 Callback = function()
 if game.Players.LocalPlayer.leaderstats.Slaps.Value >= 5000 then
 Door = 0
@@ -3114,7 +3114,7 @@ end
                     })
 
 Tab5:AddButton({
-	Name = "获取陷阱(仅20分钟)",
+	Name = "Get Trap (Only 20 mins)",
 	Callback = function()
 for i = 1, 200 do
 game:GetService("ReplicatedStorage").lbrick:FireServer()
@@ -3136,7 +3136,7 @@ end
                 })
 
 Tab5:AddToggle({
-	Name = "砖块农场(20分后没效果再用)",
+	Name = "Brick Farm (Use if the 20m version doesnt work)",
 	Default = false,
 	Callback = function(Value)
 Brickfarm = Value
@@ -3148,7 +3148,7 @@ end
 })
 
 Tab5:AddToggle({
-                    Name = "bob农场",
+                    Name = "Bob Farm",
                     Default = false,
                     Callback = function(Value)
 BobFarm = Value
@@ -3160,28 +3160,28 @@ end
                 })
 
 Tab5:AddButton({
-	Name = "获得巴西徽章",
+	Name = "Get Brazil badge",
 	Callback = function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.workspace.Lobby.brazil.portal.CFrame
                     end    
                 })
 
 Tab5:AddButton({
-	Name = "获得法庭证据徽章",
+	Name = "Get court evidence badge",
 	Callback = function()
 fireclickdetector(game.Workspace.Lobby.Scene.knofe.ClickDetector)
                     end    
                 })
 
 Tab5:AddButton({
-	Name = "获得鸭子徽章",
+	Name = "Get duck badge",
 	Callback = function()
 fireclickdetector(game.Workspace.Arena["default island"]["Rubber Ducky"].ClickDetector)
                     end    
                 })
 
 Tab5:AddButton({
-	Name = "获得孤独的橘子徽章",
+	Name = "Get The Lone Orange badge",
 	Callback = function()
 fireclickdetector(game.Workspace.Arena.island5.Orange.ClickDetector)
                     end    
@@ -3240,7 +3240,7 @@ end
                 })
 
                Tab3:AddToggle({
-                    Name = "防 void手套",
+                    Name = "防掉落",
                     Default = false,
                     Callback = function(Value)
 game.Workspace.dedBarrier.CanCollide = Value
@@ -3249,7 +3249,7 @@ game.Workspace.TAntiVoid.CanCollide = Value
                 })
 
                Tab3:AddToggle({
-                    Name = "防死神手套",
+                    Name = "防掉落伤害(接下来全是防各种手套)",
                     Default = false,
                     Callback = function(Value)
 if Value == true then
@@ -3279,7 +3279,7 @@ end
                 })
 
                Tab3:AddToggle({
-                    Name = "防巴西手套",
+                    Name = "防Brazil",
                     Default = false,
                     Callback = function(Value)
 if Value == true then
@@ -3299,7 +3299,7 @@ end
                 })
 
                Tab3:AddToggle({
-                    Name = "防死亡魔方",
+                    Name = "防Cube of Death",
                     Default = false,
                     Callback = function(Value)
 if Value == true then
@@ -3311,7 +3311,7 @@ if Value == true then
                 })
 
                Tab3:AddToggle({
-                    Name = "防时间停止",
+                    Name = "防Timestop",
                     Default = false,
                     Callback = function(Value)
 AntiTimestop = Value
@@ -3327,7 +3327,7 @@ end
                 })
 
                Tab3:AddToggle({
-                    Name = "防squid手套",
+                    Name = "防Squid",
                     Default = false,
                     Callback = function(Value)
 AntiSquid = Value
@@ -3344,7 +3344,7 @@ end
                 })
 
                Tab3:AddToggle({
-                    Name = "防千斤顶",
+                    Name = "防Hallow Jack",
                     Default = false,
                     Callback = function(Value)
 game.Players.LocalPlayer.PlayerScripts.HallowJackAbilities.Disabled = Value
@@ -3352,7 +3352,7 @@ game.Players.LocalPlayer.PlayerScripts.HallowJackAbilities.Disabled = Value
                 })
 
                Tab3:AddToggle({
-                    Name = "防交换手套",
+                    Name = "防Conveyor",
                     Default = false,
                     Callback = function(Value)
 game.Players.LocalPlayer.PlayerScripts.ConveyorVictimized.Disabled = Value
@@ -3360,7 +3360,7 @@ game.Players.LocalPlayer.PlayerScripts.ConveyorVictimized.Disabled = Value
                 })
 
                Tab3:AddToggle({
-                    Name = "防Brick手套",
+                    Name = "防Brick",
                     Default = false,
                     Callback = function(Value)
 AntiBrick = Value
@@ -3376,7 +3376,7 @@ end
                 })
 
                Tab3:AddToggle({
-                    Name = "防编辑手套",
+                    Name = "防[REDACTED]",
                     Default = false,
                     Callback = function(Value)
 game.Players.LocalPlayer.PlayerScripts.Well.Disabled = Value
@@ -3384,7 +3384,7 @@ game.Players.LocalPlayer.PlayerScripts.Well.Disabled = Value
                 })
 
                Tab3:AddToggle({
-                    Name = "防 杂 手套",
+                    Name = "防Za Hando",
                     Default = false,
                     Callback = function(Value)
 AntiZaHando = Value
@@ -3400,7 +3400,7 @@ task.wait()
                 })
 
                Tab3:AddToggle({
-                    Name = "防收割者",
+                    Name = "防Reaper",
                     Default = false,
                     Callback = function(Value)
 AntiReaper = Value
@@ -3417,7 +3417,7 @@ end
                 })
 
                Tab3:AddToggle({
-                    Name = "防推动器",
+                    Name = "防Pusher",
                     Default = false,
                     Callback = function(Value)
 AntiPusher = Value
@@ -3433,7 +3433,7 @@ end
                 })
 
                Tab3:AddToggle({
-                    Name = "防助推器",
+                    Name = "防Booster",
                     Default = false,
                     Callback = function(Value)
 AntiBooster = Value
@@ -3449,7 +3449,7 @@ end
                 })
 
                Tab3:AddToggle({
-                    Name = "防 邮件 手套",
+                    Name = "防Mail",
                     Default = false,
                     Callback = function(Value)
 game.Players.LocalPlayer.Character.YouHaveGotMail.Disabled = Value
@@ -3464,7 +3464,7 @@ end
                 })
 
                Tab3:AddToggle({
-                    Name = "防 眩晕 手套",
+                    Name = "防Stun",
                     Default = false,
                     Callback = function(Value)
 AntiStun = Value
@@ -3478,7 +3478,7 @@ end
                 })
 
                Tab3:AddToggle({
-                    Name = "防*%*#手套(我管他什么玩意，开就对了)",
+                    Name = "防Megarock/Custom",
                     Default = false,
                     Callback = function(Value)
 AntiRock = Value
